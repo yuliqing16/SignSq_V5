@@ -221,16 +221,16 @@ public class QianDaoFragment_sign extends Fragment {
 						signThread(2,adapter);
 						break;
 					case R.id.radioButton3:
-						signThread(3,adapter);
-						break;
-					case R.id.radioButton4:
 						signThread(4,adapter);
 						break;
+					case R.id.radioButton4:
+						signThread(8,adapter);
+						break;
 					case R.id.radioButton5:
-						signThread(5,adapter);
+						signThread(16,adapter);
 						break;
 					default:
-						signThread(5,adapter);
+						signThread(8,adapter);
 						break;
 					}
 				} catch (Exception e) {
