@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    tools:context="com.ylq.sign.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="签到线程数量:" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/textView1"
+       android:text="网速好的情况下线程数越多签到越快!"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="#fffF0000" />
+
+    <RadioGroup 
+        android:id="@+id/choice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:orientation="horizontal"
+        
+        >
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1" />
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="2" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:checked="true"
+		android:layout_weight="1"
+        android:text="3" />
+   <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="4" />
+      <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="5" />
+    </RadioGroup>
+    <RelativeLayout 
+        android:id="@+id/lbts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice">
+	   <com.beardedhen.androidbootstrap.BootstrapButton
+	       android:id="@+id/bt_flush"
+	
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       bootstrapbutton:bb_icon_left="fa-undo"
+	       android:text = "刷新列表"
+	       android:padding="4dp"
+	       android:layout_alignParentLeft="true"
+	       bootstrapbutton:bb_roundedCorners="true"
+	       bootstrapbutton:bb_type="primary" />
+	 <com.beardedhen.androidbootstrap.BootstrapButton
+	       android:id="@+id/bt_log"
+	       android:padding="4dp"
+	       android:layout_toLeftOf="@+id/bt_sign"
+	       android:layout_toRightOf="@+id/bt_flush"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       bootstrapbutton:bb_icon_left="fa-list-alt"
+	       android:text = "日志"
+	       bootstrapbutton:bb_roundedCorners="true"
+	       bootstrapbutton:bb_type="info" />
+	   <com.beardedhen.androidbootstrap.BootstrapButton
+	       android:id="@+id/bt_sign"
+	       android:padding="4dp"
+	       android:layout_alignParentRight="true"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       bootstrapbutton:bb_icon_left="fa-pencil"
+	       android:text = "一键签到"
+	       bootstrapbutton:bb_roundedCorners="true"
+	       bootstrapbutton:bb_type="warning" />
+    </RelativeLayout>
+	<FrameLayout
+	    android:id="@+id/aaaview"
+	    android:layout_below="@id/lbts"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"/>
+    <ExpandableListView
+        android:id="@+id/tb_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:childDivider="@drawable/child_bg"
+        android:childIndicatorLeft="0dp"
+        android:divider="@color/Grey"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:layout_below="@id/aaaview"
+        android:scrollbarAlwaysDrawHorizontalTrack="true" >
+    </ExpandableListView>
+</RelativeLayout>

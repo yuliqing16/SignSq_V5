@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="注册登录,没有则可以输入完之后直接点注册然后登陆,有账号可以直接登陆"
+        android:textSize="12dp"
+        android:textColor="@color/black"/>
+    <EditText 
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="用户名"
+        android:background="@drawable/username"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+    <EditText 
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/passwordbg"
+        android:hint="密码"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        >
+        <Button 
+            android:id="@+id/btlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="登录"
+            style="@android:style/Widget.Button"/>
+        <Button 
+            android:id="@+id/btreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            style="@android:style/Widget.Button"
+            android:text="注册"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

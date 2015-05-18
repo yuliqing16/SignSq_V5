@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+     
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white">
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:text="提示信息"/>
+   	<com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edit_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/title"
+            bootstrapbutton:be_roundedCorners="true"
+            android:gravity="center"/>
+   	<LinearLayout 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@+id/edit_in"
+   	    android:orientation="horizontal">
+   	    <com.beardedhen.androidbootstrap.BootstrapButton
+	       	android:id="@+id/btSure"
+	        android:layout_gravity="left"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       bootstrapbutton:bb_icon_left="fa-gbp"
+		       android:text = "兑换"
+		       android:padding="4dp"
+		       android:layout_marginLeft="10dp"
+		       android:layout_alignParentLeft="true"
+		       bootstrapbutton:bb_roundedCorners="true"
+		       bootstrapbutton:bb_type="primary" />
+   	   <com.beardedhen.androidbootstrap.BootstrapButton
+	       	android:id="@+id/btCancle"
+	        android:layout_gravity="left"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       bootstrapbutton:bb_icon_left="fa-caret-down"
+		       android:text = "取消"
+		       android:padding="4dp"
+		       android:layout_marginRight="10dp"
+		       android:layout_alignParentLeft="true"
+		       bootstrapbutton:bb_roundedCorners="true"
+		       bootstrapbutton:bb_type="danger" />
+   	</LinearLayout>
+</RelativeLayout>

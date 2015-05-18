@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/funbg">
+    <RelativeLayout 
+	    android:id="@+id/layout_user"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <ImageView 
+	        android:id="@+id/img_head"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:src="@drawable/unknown_head"/>
+	    <TextView 
+	        android:id="@+id/tv_uname"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/img_head"
+	        android:layout_marginLeft="10dp"
+	        android:layout_centerVertical="true"
+	        android:textSize="18dp"
+	        android:text="用户名"/>
+	    <TextView 
+	        android:id="@+id/tv_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:textSize="12dp"
+	        android:textColor="#ff0000ff"
+	        android:text="时间asasas说那是"/>
+	</RelativeLayout>
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_below="@+id/layout_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="#777777"
+        android:textSize="12dp"/>
+    <TextView 
+        android:id="@+id/tv_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+
+        android:layout_below="@+id/tv_title"
+        android:textSize="16dp"/>
+    <ImageView 
+        android:id="@+id/img_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_loading"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:adjustViewBounds="true"
+
+        android:layout_below="@+id/tv_info"/>
+    <TextView 
+        android:id="@+id/bnk"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/img_show"
+        android:textSize="15dp"/>
+</RelativeLayout>
+

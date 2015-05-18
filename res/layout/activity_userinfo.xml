@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+	    android:id="@+id/menu_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical">
+	    	<RelativeLayout
+		        android:id="@+id/head_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+			    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail 
+					android:id="@+id/head_img"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					bootstrap:bct_image="@drawable/unknown_head"
+					bootstrap:bct_size="medium"
+					android:layout_margin="15dp"/>
+				    <TextView 
+				        android:id="@+id/tv_user_name"
+				        android:layout_toRightOf="@id/head_img"
+				        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+				        android:layout_centerVertical="true"
+				        android:textSize="20sp"
+				        android:text="未登录"/>
+				    <TextView 
+				        android:id="@+id/tv_score"
+				        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+				        android:layout_centerVertical="true"
+				        android:layout_toLeftOf="@+id/bt_un_sign"
+				        android:textSize="16sp"
+				        android:paddingRight="16sp"
+				        android:text="积分:"/>
+				    <com.beardedhen.androidbootstrap.BootstrapButton
+				       android:id="@+id/bt_un_sign"
+				       android:layout_marginRight="5dp"
+				       android:layout_width="wrap_content"
+				       android:layout_height="wrap_content"
+				       android:layout_centerVertical="true"
+				       android:layout_alignParentRight="true"
+				       android:text = "注销"
+				       bootstrap:bb_icon_left="fa-money"
+				       bootstrap:bb_roundedCorners="true"
+				       bootstrap:bb_type="danger" />
+		    </RelativeLayout>
+		    <TextView 
+		        android:id="@+id/time_last"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/red"/>
+		<TextView 
+		    android:id="@+id/buy_history"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="..."/>										
+    </LinearLayout>
+</ScrollView>

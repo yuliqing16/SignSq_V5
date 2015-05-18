@@ -1,0 +1,20 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	 <com.beardedhen.androidbootstrap.BootstrapButton
+        	android:id="@+id/bt_send"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_margin="10dp"
+             android:text="我要发布"
+             android:textSize="30sp"
+             android:layout_centerInParent="true"
+             bootstrapbutton:bb_icon_left="fa-cloud"
+             bootstrapbutton:bb_roundedCorners="true"
+             bootstrapbutton:bb_type="primary"
+             bootstrapbutton:bb_text_gravity="center" />
+</RelativeLayout>

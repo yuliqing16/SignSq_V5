@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#fff0f0f0"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView 
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:text="名称"
+                    android:textColor="@color/black"/>
+                <TextView 
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="所需分值"
+                    android:textColor="#ff555555"/>
+
+            </LinearLayout>
+           	<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+	       		android:id="@+id/btBuy"
+	            android:layout_gravity="right"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       bootstrapbutton:bb_icon_left="fa-gbp"
+		       android:text = "兑换"
+		       android:padding="4dp"
+		       android:layout_alignParentLeft="true"
+		       bootstrapbutton:bb_roundedCorners="true"
+		       bootstrapbutton:bb_type="primary" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
